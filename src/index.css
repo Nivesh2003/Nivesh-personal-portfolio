@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* YHa sirf names define krre h colors ke liye */
+@theme {
+  --color-background: #0b0e13;      /* darker base */
+  --color-foreground: #f5f7fa;
+
+  --color-card: #141923;            /* slightly lifted */
+
+  --color-primary: #e63946;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #b11226;
+  --color-secondary-foreground: #f5f7fa;
+
+  --color-muted: #1a202a;           /* clearer separation */
+  --color-muted-foreground: #9aa4b2;
+
+  --color-border: #2c3440;          /* lighter so visible */
+
+  --radius: 0.75rem;
+
+  --color-highlight: #ff4d5a;
+
+  --color-surface: #1a1f30;         /* brighter than background */
+}
+
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        font-family: "Inter",sans-serif;
+    }
+
+    .font-serif{
+        font-family: "Playfair Display", serif;
+    }
+}
+
+@layer components{
+    .glass{
+        background-color: color-mix(in srgb, var(--color-surface) 60%, transparent);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+    }
+}
