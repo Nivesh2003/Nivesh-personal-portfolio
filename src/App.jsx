@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import Hero from "./sections/Hero"
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <div className="min-h-screen overflow-x-hidden">
       <Navbar/>
       <main>
-        
+        <Hero/>
       </main>
     </div>
   )
