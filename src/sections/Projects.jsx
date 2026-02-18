@@ -37,7 +37,7 @@ const Projects = () => {
             </div>
 
             {/* Projects grid */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
                 {projects.map((project,idx)=>(
                     <div className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1" style={{animationDelay:`${(idx+1)*100}ms`}} key={idx}>
                         {/* image div  */}
