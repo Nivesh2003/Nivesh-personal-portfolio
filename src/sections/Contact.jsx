@@ -8,8 +8,20 @@ const [formData,setFormData] = useState({
     email:"",
     message:""
 })
+const [isLoading, setisLoading] = useState(false);
+const [submitStatus, setsubmitStatus] = useState({
+    type:null, //success or error
+    message:""
+})
 const handleSubmit = async(e)=>{
     e.preventDefault();
+    setisLoading(true);
+    setsubmitStatus({type:null,message:""});
+    try {
+        
+    } catch (error) {
+        
+    }
 }
 const contacts = [
   {
