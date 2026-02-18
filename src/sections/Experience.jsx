@@ -99,9 +99,9 @@ const Experience = () => {
                       {exp.description}
                     </p>
                     <div
-                      // className={`flex flex-wrap gap-2 mt-4 ${
-                      //   idx % 2 === 0 ? "md:justify-end" : ""
-                      // }`}
+                      className={`flex flex-wrap gap-2 mt-4 ${
+                        idx % 2 === 0 ? "md:justify-end" : ""
+                      }`}
                     >
                       {exp.technologies.map((tech, techIdx) => (
                         <span
