@@ -86,7 +86,7 @@ const Contact = () => {
 
                 {/* Main form  */}
                 <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
-                    <div className='glass rounded-3xl p-8 border border-primary/30 animate-fade-in animation-delay-300'>
+                    <div className='glass rounded-3xl p-6 border border-primary/30 animate-fade-in animation-delay-300'>
                         <form className='space-y-6' onSubmit={handleSubmit}>
                             <div><label htmlFor="name" className='text-sm block font-medium mb-2'>Name</label>
                                 <input id='name' type='text' required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder='Your name...' className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all' />
@@ -120,8 +120,8 @@ const Contact = () => {
                     </div>
                     
           {/* Contact Info */}
-          <div className="space-y-6 animate-fade-in animation-delay-400">
-            <div className="glass rounded-3xl p-8">
+          <div className="space-y-6 animate-fade-in animation-delay-400 ">
+            <div className="glass rounded-3xl p-8 border  border-primary/30">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information
               </h3>
@@ -130,7 +130,7 @@ const Contact = () => {
                   <a
                     key={i}
                     href={item.href}
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
+                    className="flex flex-wrap items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <item.icon className="w-5 h-5 text-primary" />

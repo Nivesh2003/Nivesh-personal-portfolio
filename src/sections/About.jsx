@@ -43,7 +43,7 @@ const About = () => {
 
             <div className="space-y-8 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a Computer Science graduate who genuinely enjoys building things on the web.
+                I’m a Computer Science graduate (2026) who genuinely enjoys building things on the web.
                 What started as curiosity about how websites work slowly turned into a strong
                 interest in full-stack development — understanding both how things look and how
                 they function behind the scenes.
@@ -72,16 +72,21 @@ const About = () => {
 
           </div>
 
-          {/* Right col - highlights */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {highlights.map((item,idx)=>(
-              <div key={idx} className="glass p-6 rounded-2xl animate-fade-in" style={{animationDelay:`${(idx+1)*100}ms`}}>
-                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 hover:bg-primary/35">{<item.icon className="w-6 h-6 text-primary"/>}</div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+{/* Right col - Visual */}
+<div className="relative w-full flex items-center justify-center">
+  <div className="relative w-full max-w-lg lg:max-w-full">
+    
+    <img
+      src="/pc.png" // adjust path
+      alt="Developer setup"
+      className="w-full h-auto object-contain rounded-full"
+    />
+
+  </div>
+
+
+</div>
+
 
         </div>
       </div>

@@ -56,12 +56,11 @@ const Hero = () => {
                     {/* Headline  */}
                     <div className="space-y-4">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                            Engineering Thoughtful <br /> <span className="text-primary/90 glow-text">Digital Products </span> That <br /> Grow with 
-                            <span className="font-serif italic font-normal text-white"> you</span>
+                            <span className="font-serif italic font-normal text-white"> Engineering</span> Thoughtful<br /> <span className="text-primary/90 glow-text">Digital Products </span>
                         </h1>
 
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                            Hi I’m Nivesh, a Full-Stack JavaScript Developer passionate about crafting clean, scalable systems. I turn complex ideas into intuitive digital experiences — designed with intention and built for growth.
+                            Hi I’m <span className="text-primary-foreground">Nivesh</span> , a Full-Stack JavaScript Developer passionate about crafting clean, scalable systems. I turn complex ideas into intuitive digital experiences — designed with intention and built for growth.
                         </p>
                     </div>
 

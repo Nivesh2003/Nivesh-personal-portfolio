@@ -2,7 +2,7 @@
 
 /* YHa sirf names define krre h colors ke liye */
 @theme {
-  --color-background: #0b0e13;      /* darker base */
+  --color-background: #130b0b;      /* darker base */
   --color-foreground: #f5f7fa;
 
   --color-card: #141923;            /* slightly lifted */
@@ -49,11 +49,19 @@
         border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
     }
 .glass-strong {
-    background-color: color-mix(in srgb, var(--color-red-950) 80%, transparent);
+    background-color: color-mix(in srgb, var(--color-surface) 60%, transparent);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 40%, transparent);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .glass-strong {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-color: #0a0a0a;
+    border: 1px solid #1f1f1f;
+  }
 }
 
     .glow-text{
